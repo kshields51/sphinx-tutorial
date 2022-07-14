@@ -79,6 +79,24 @@ You can use `sphinx-autobuild` to live update your html rendered documentation a
 
 From your `docs` folder
 ```
-sphinx-autobuild . docs/_build
+sphinx-autobuild . docs-autorefresh/_build
 ```
 This will take everything from your current directory and place it into a directory called `docs-autorefresh/_build`. It's a little confusing since you already have a docs directory
+
+# Automatically Generating Documentation from a Docstring
+Import these two plugins by placing these into your extensions list in `conf.py`:
+
+```
+'sphinx.ext.autodoc',
+'sphinx.ext.napoleon',
+```
+Why it works: autodoc is a native plugin for sphinx that gives it the functionality to find docstrings in your codebase. Napoleon is another native plugin for sphinx that let's you use Google's formatting for docstrings.
+
+You can easily generate documenation using DocStrings. to do so, find an empty space in the `.md` file that you are working on and place this line of code subbing in your own custom path:
+
+```{eval-rst}  
+.. autofunction:: test_some_tests.test_two_equals_two
+```
+Why it works: You use pythons module syntax to navigate to the function. For example this function lives in `test_some_tests.py`, and the function is called `test_two_equals_two`
+
+Therefore you can use the syntax in the example to find it.
