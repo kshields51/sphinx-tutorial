@@ -79,9 +79,9 @@ You can use `sphinx-autobuild` to live update your html rendered documentation a
 
 From your `docs` folder
 ```
-sphinx-autobuild . docs-autorefresh/_build
+sphinx-autobuild docs docs/_build
 ```
-This will take everything from your current directory and place it into a directory called `docs-autorefresh/_build`. It's a little confusing since you already have a docs directory
+This will start up a local development server that you can access from the url that is generated in the terminal
 
 # Automatically Generating Documentation from a Docstring
 Import these two plugins by placing these into your extensions list in `conf.py`:
