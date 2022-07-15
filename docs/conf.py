@@ -13,17 +13,16 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-import sphinx_theme
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'test-project'
-copyright = '2022, FirstName LastName'
-author = 'FirstName LastName'
+project = 'test'
+copyright = '2022, firstname'
+author = 'firstname'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = 'lastname'
 
 
 # -- General configuration ---------------------------------------------------
@@ -32,14 +31,7 @@ release = '0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon',
-    'myst_parser',
-    'sphinx_rtd_theme',
-]
-
-myst_enable_extensions = [
-    'colon_fence'
+    'myst_parser'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -56,8 +48,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'stanford_theme'
-html_theme_path = [sphinx_theme.get_html_theme_path('stanford-theme')]
+html_theme = 'alabaster'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
