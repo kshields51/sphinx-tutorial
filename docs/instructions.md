@@ -2,6 +2,9 @@
 
 Run the following command to install sphinx
 
+```
+pip install -r requirements.txt
+```
 Important! On mac pip should be referenced as pip3
 
 ```
