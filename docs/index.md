@@ -19,7 +19,5 @@ instructions.md
 snippets/*
 ```
 
-```{eval-rst}  
-.. autofunction:: test_some_tests.test_two_equals_two
-```
+You can put automatically generated code HERE
 
