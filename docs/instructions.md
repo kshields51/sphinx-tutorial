@@ -78,6 +78,28 @@ sphinx-autobuild docs docs/_build
 ```
 This will start up a local development server that you can access from the url that is generated in the terminal
 
+# Generating tabbed content
+
+To use tabs in your documentation, you need to add this extension to your list of extensions.
+
+```
+'sphinx_panels'
+```
+
+Then to create a tabbed section simply use the following directives (directives are special markup strings)
+
+````
+``` {tabbed} Windows
+Some content. Windows is the name of the title (it could be anything you want.)
+```
+
+```{tabbed} Mac
+Some content. Mac is the name of the title (it could be anything you want.)
+```
+````
+
+
+
 # Automatically Generating Documentation from a Docstring
 Import these two plugins by placing these into your extensions list in `conf.py`:
 
