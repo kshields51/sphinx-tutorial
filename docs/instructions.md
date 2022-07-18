@@ -7,10 +7,6 @@ pip install -r requirements.txt
 ```
 Important! On mac pip should be referenced as pip3
 
-```
-pip install -U sphinx
-```
-
 To check that sphinx was properly installed you can run
 
 ```
@@ -19,16 +15,12 @@ sphinx-build --version
 
 This should return something like `sphinx-build 5.0.2` (version may differ)
 
-Since you will be using `.md` files and not `.rst` files, you need to install the `myst-parser` 
+Since you will be using `.md` files and not `.rst` files, the requirements.txt installs the `myst-parser` 
 
-```
-pip install myst-parser
-```
-Optional: To make it easier to work with the docs, you need a way to listen for changes to the docs automatically and reload the docs website. To do this, use `sphinx-autobuild`
-```
-pip install sphinx-autobuild
-```
 
+ To make it easier to work with the docs, you need a way to listen for changes to the docs automatically and reload the docs website. To do this, the requirements.txt installs `sphinx-autobuild`
+
+The requirements.txt also installs a custom theme. (must be enabled in the `conf.py` to be able to see it however)
 # To start a project
 Sphinx comes packaged with a command line interface (CLI) for beginning a project in an easy way. Simply navigate to the path that you would like the documentation to live and enter the following command.
 
