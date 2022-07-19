@@ -72,7 +72,7 @@ Now, inside of your `_build` folder, navigate to the `html` folder and you shoul
 
 You can use `sphinx-autobuild` to live update your html rendered documentation as you edit your markdown files. This eliminates the need to compile your `.md` files all the time using the `make html` command.
 
-From your `docs` folder
+From your top-level folder
 ```
 sphinx-autobuild docs docs/_build
 ```
