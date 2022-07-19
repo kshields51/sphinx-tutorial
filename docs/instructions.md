@@ -111,9 +111,20 @@ Why it works: autodoc is a native plugin for sphinx that gives it the functional
 
 You can easily generate documenation using DocStrings. to do so, find an empty space in the `.md` file that you are working on and place this line of code subbing in your own custom path:
 
+````
 ```{eval-rst}  
 .. autofunction:: test_some_tests.test_two_equals_two
 ```
+````
 Why it works: You use pythons module syntax to navigate to the function. For example this function lives in `test_some_tests.py`, and the function is called `test_two_equals_two`
 
 Therefore you can use the syntax in the example to find it.
+
+# What to Do If Your Table of Contents Seems Wonky
+
+Sometimes adding new entries to the Table of contents can cause it to start behaving strangely (ommiting certain entries, entries disappearing when you navigate to a page). If this is the case run this command which will clear out your `_build` folder. Note that it will refresh itself automatically next time you use `make html` or `sphinx-autobuild docs docs/_build`.
+
+From your docs folder:
+```
+make clean _build
+```
