@@ -88,14 +88,34 @@ To use tabs in your documentation, you need to add this extension to your list o
 
 Then to create a tabbed section simply use the following directives (directives are special markup strings)
 
-````
-``` {tabbed} Windows
-Some content. Windows is the name of the title (it could be anything you want.)
-```
+````{tabbed} Windows  
+  To install testla on Windows follow these 
+  instructions:
+  
+  Navigate to this directory:
 
-```{tabbed} Mac
-Some content. Mac is the name of the title (it could be anything you want.)
-```
+  ```
+  C:/Users/firstname.lastname/Documents/Testla
+  ```
+
+  Install Docker for Windows <https://docs.docker.com/desktop/install/windows-install/>.
+````
+
+````{tabbed} Mac
+To install testla on Mac follow these instructions:
+
+Navigate to this directory:
+
+  ```
+  /Users/firstname.lastname/Documents/Testla
+  ```
+
+  Install Docker for Mac <https://docs.docker.com/desktop/install/mac-install/>.
+````
+
+````{tabbed} Linux
+To install on Linux:
+
 ````
 
 
@@ -113,10 +133,10 @@ You can easily generate documenation using DocStrings. to do so, find an empty s
 
 ````
 ```{eval-rst}  
-.. autofunction:: test_some_tests.test_two_equals_two
+.. autofunction:: function_example.x_plus_y
 ```
 ````
-Why it works: You use pythons module syntax to navigate to the function. For example this function lives in `test_some_tests.py`, and the function is called `test_two_equals_two`
+Why it works: You use pythons module syntax to navigate to the function. For example this function lives in `function_example.py`, and the function is called `x_plus_y`
 
 Therefore you can use the syntax in the example to find it.
 
