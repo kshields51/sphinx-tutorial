@@ -1,5 +1,5 @@
 sphinx
 myst-parser
 sphinx-autobuild
-renku-sphinx-theme
+sphinx-rtd-theme
 sphinx-panels
