@@ -88,6 +88,8 @@ To use tabs in your documentation, you need to add this extension to your list o
 
 Then to create a tabbed section simply use the following directives (directives are special markup strings)
 
+::::
+
 ````{tabbed} Windows  
   To install testla on Windows follow these 
   instructions:
@@ -117,7 +119,7 @@ Navigate to this directory:
 To install on Linux:
 
 ````
-
+::::
 
 
 # Automatically Generating Documentation from a Docstring
